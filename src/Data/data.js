@@ -4,7 +4,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -33,14 +33,15 @@ export default [
   },
   {
     id: 2,
-    title: "Python - Web Scraping with Selenium - Graph Data",
+    title:
+      "How to make sibling div element visible when list item is hovered on",
     question:
-      "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+      "I have the following simple header component with navigation items, which when hovered on should add the following two css rules to the mega-menu div element so that it appears",
+    tag: "python",
     created: "5-May-2023",
     modified: "5-May-2023",
-    views: "100",
-    vote: 24,
+    views: "90",
+    vote: 10,
     author: "Jaya Shibu",
     answer: [
       {
@@ -65,14 +66,15 @@ export default [
   },
   {
     id: 3,
-    title: "Python - Web Scraping with Selenium - Graph Data",
+    title:
+      "Woocommerce add custom dropdown-field to checkout and show in backend (order)",
     question:
-      "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+      "I use the following code to add a custom field to the WooCommerce checkout. The field is showing in the checkout process but in the backend the value is always empty.",
+    tag: "javascripy",
     created: "5-May-2023",
     modified: "5-May-2023",
-    views: "100",
-    vote: 24,
+    views: "10",
+    vote: 7,
     author: "Jaya Shibu",
     answer: [
       {
@@ -97,14 +99,14 @@ export default [
   },
   {
     id: 4,
-    title: "Python - Web Scraping with Selenium - Graph Data",
+    title: "matplotlib limits not working for mandelbrot set",
     question:
-      "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+      "I'm currently coding a Mandelbrot set using matplotlib with a zoom function to infinitely zoom in on any section of it, however when I zoom in the new data that's calculated is off-center from the graph axes.",
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
-    views: "100",
-    vote: 24,
+    views: "50",
+    vote: 5,
     author: "Jaya Shibu",
     answer: [
       {
@@ -129,10 +131,10 @@ export default [
   },
   {
     id: 5,
-    title: "Python - Web Scraping with Selenium - Graph Data",
+    title: "Get store-Procedure Result inside another store-procedure",
     question:
-      "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+      "I've two store procedure. The first get a new ID from a database. I need to use these id inside another store procedure; I can't get this info correctly. Store Procedure used to get ID",
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -161,14 +163,14 @@ export default [
   },
   {
     id: 6,
-    title: "Python - Web Scraping with Selenium - Graph Data",
+    title: "Centralize dbsession for multisite yii2 application",
     question:
-      "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+      "I want to use DBSession. But I want to use a centralized database table for storing sessions for all the sites. Will it Collide sessions from multiple domains? If yes then how can I prefix session ids with some unique domain id",
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
-    views: "100",
-    vote: 24,
+    views: "0",
+    vote: 0,
     author: "Jaya Shibu",
     answer: [
       {
@@ -196,7 +198,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -228,7 +230,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -260,7 +262,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -292,7 +294,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -324,7 +326,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -356,7 +358,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -388,7 +390,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -420,7 +422,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -452,7 +454,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -484,7 +486,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -516,7 +518,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -548,7 +550,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -580,7 +582,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -612,7 +614,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -644,7 +646,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -676,7 +678,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -708,7 +710,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -740,7 +742,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -772,7 +774,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -804,7 +806,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -836,7 +838,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -868,7 +870,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -900,7 +902,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -932,7 +934,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -964,7 +966,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -996,7 +998,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -1028,7 +1030,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -1060,7 +1062,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -1092,7 +1094,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -1124,7 +1126,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -1156,7 +1158,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -1188,7 +1190,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -1220,7 +1222,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -1252,7 +1254,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -1284,7 +1286,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -1316,7 +1318,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -1348,7 +1350,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -1380,7 +1382,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -1412,7 +1414,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -1444,7 +1446,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -1476,7 +1478,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -1508,7 +1510,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -1540,7 +1542,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -1572,7 +1574,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",
@@ -1604,7 +1606,7 @@ export default [
     title: "Python - Web Scraping with Selenium - Graph Data",
     question:
       "I'm trying to scrape data from a bar chart (Overview - Price Chart ($)), but nothing I've tried returns any information about the chart. Any tips",
-    tag: { javaScript, validation, number },
+    tag: "java",
     created: "5-May-2023",
     modified: "5-May-2023",
     views: "100",

@@ -1,7 +1,45 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import data from "../../Data/data";
 
 const List = () => {
+  const Listing = data.map((item) => {
+    const {
+      id,
+      title,
+      question,
+      tag,
+      created,
+      modified,
+      views,
+      vote,
+      author,
+      answer,
+    } = item;
+    return (
+      <div>
+        <div className="List-container">
+          <div className="List-vertical-left">
+            <div className="Votes">{vote} Votes</div>
+            <div className="Votes">{answer.length} Answer</div>
+            <div className="Votes">{views} Views</div>
+          </div>
+          <div className="List-vertical-right">
+            <div>
+              <Link to="/detail">{title}</Link>
+            </div>
+            <div>{question}</div>
+            <div className="Button-left ">
+              <button> {tag} </button>
+              <button> {tag} </button>
+              <button> {tag} </button>
+            </div>
+          </div>
+        </div>
+        <div class="divider"> </div>
+      </div>
+    );
+  });
   return (
     <>
       <div className="List-container">
@@ -23,32 +61,8 @@ const List = () => {
         </div>
       </div>
       <div class="divider"> </div>
-      <div className="List-container">
-        <div className="List-vertical-left">
-          <div className="Votes">0 Votes</div>
-          <div className="Votes">0 Answer</div>
-          <div className="Votes">3 Views</div>
-        </div>
-        <div className="List-vertical-right">
-          <div>
-            <Link to="/detail">
-              Woocommerce add custom dropdown-field to checkout and show in
-              backend (order)
-            </Link>
-          </div>
-          <div>
-            I use the following code to add a custom field to the WooCommerce
-            checkout. The field is showing in the checkout process but in the
-            backend the value is always empty. add_filter...
-          </div>
-          <div className="Button-left ">
-            <button> javaScript </button>
-            <button> python </button>
-            <button> backend </button>
-          </div>
-        </div>
-      </div>
-      <div class="divider"> </div>
+      {Listing}
+
       <div className="List-container">
         <div class="pagination">
           <a href="#">&laquo;</a>
@@ -62,9 +76,12 @@ const List = () => {
         </div>
 
         <div class="Button-right ">
-          <a href="#">15</a>
-          <a href="#">30</a>
-          <a href="#">50</a> per page
+          <div class="pagination">
+            <a href="#">15</a>
+            <a href="#">30</a>
+            <a href="#">50</a>
+            <a href="#">per page</a>
+          </div>
         </div>
       </div>
     </>
