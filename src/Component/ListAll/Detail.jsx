@@ -13,11 +13,15 @@ const Detail = ({ data }) => {
       {filteredData.map((selectedQuestion) => (
         <div>
           <div className="List-container">
-            <div className="Title-left">{selectedQuestion.title}</div>
+            <div className="Title-left">
+              <h1>{selectedQuestion.title}</h1>
+            </div>
           </div>
           <div className="List-container">
-            <div className="Title-left">Asked Today</div>
-            <div className="Title-right "> Viewed 5 times </div>
+            <div className="Title-left">Asked {selectedQuestion.created}</div>
+            <div className="Title-right ">
+              Viewed {selectedQuestion.views} times
+            </div>
           </div>
           <div className="divider"> </div>
           <div className="List-container">
@@ -27,12 +31,13 @@ const Detail = ({ data }) => {
               </div>
               <div className="Votes">{selectedQuestion.vote}</div>
               <div className="Votes">
-                {" "}
                 <FaArrowDown />
               </div>
             </div>
-            <div className="List-vertical-right">
-              <div>{selectedQuestion.question}</div>
+            <div className="List-vertical-right Lineheight">
+              <div className="Bottom-space Padding-top">
+                {selectedQuestion.question}
+              </div>
               <div className="Button-left ">
                 <button> javaScript </button>
                 <button> python </button>
@@ -43,7 +48,7 @@ const Detail = ({ data }) => {
           <div className="divider"> </div>
           <div className="List-container">
             <div className="Title-left">
-              {selectedQuestion.answer.length} Answers{" "}
+              <h3>{selectedQuestion.answer.length} Answers</h3>
             </div>
           </div>
 

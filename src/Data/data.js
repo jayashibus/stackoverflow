@@ -16,6 +16,7 @@ export default [
         post: "What's the cleanest, most effective way to validate decimal numbers in JavaScript?",
         vote: 24,
         postedDate: "5-May-2023",
+        author: "Shibu",
       },
       {
         id: 2,
