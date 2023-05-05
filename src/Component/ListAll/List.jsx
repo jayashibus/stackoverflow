@@ -1,12 +1,26 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AllList from "./AllList";
+import Pagination from "./Pagination";
 
 const List = ({ data }) => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(15);
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
+
   return (
     <>
       <div className="List-container">
-        <div className="Title-left">All Questions</div>
+        <div className="Title-left">
+          <h1>All Questions</h1>
+        </div>
         <div className="Button-right ">
           <Link to="/askquestion">
             <button> Ask Question </button>
@@ -14,7 +28,9 @@ const List = ({ data }) => {
         </div>
       </div>
       <div className="List-container">
-        <div className="Title-left">23691,456 Question</div>
+        <div className="Title-left">
+          <h3>23691,456 Question</h3>
+        </div>
         <div className="Button-right ">
           <button> Newest </button>
           <button> Active </button>
@@ -24,21 +40,17 @@ const List = ({ data }) => {
         </div>
       </div>
       <div className="divider"> </div>
-      {data.map((item) => (
+      {currentItems.map((item) => (
         <AllList key={item.id} {...item} />
       ))}
 
       <div className="List-container">
-        <div className="pagination">
-          <a href="#">&laquo;</a>
-          <a href="#">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">4</a>
-          <a href="#">5</a>
-          <a href="#">6</a>
-          <a href="#">&raquo;</a>
-        </div>
+        <Pagination
+          itemsPerPage={itemsPerPage}
+          totalItems={data.length}
+          currentPage={currentPage}
+          onPageChange={handlePageChange}
+        />
 
         <div className="Button-right ">
           <div className="pagination">

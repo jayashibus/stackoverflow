@@ -8,7 +8,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  border: solid 1px red;
+  /* border: solid 1px rgb(144, 143, 143); */
   justify-content: space-between;
 }
 .Title-left {
@@ -17,6 +17,7 @@
 
 .Button-right {
   align-self: flex-end;
+  align-self: center;
 }
 .Button-left {
   align-self: flex-start;
@@ -58,4 +59,25 @@
 .Askquestion {
   display: flex;
   flex-direction: column;
+}
+.h1 {
+  line-height: 1.3;
+  margin: 0 0 1em;
+  font-size: 1em;
+}
+
+.h3 {
+  line-height: 1.3;
+  margin: 0 0 1em;
+  font-size: 0.5em;
+}
+.h3 blue {
+  color: rgb(243, 81, 12);
+}
+
+.Bottom-space {
+  margin-bottom: 1em;
+}
+.smallfont {
+  font-size: 12px;
 }

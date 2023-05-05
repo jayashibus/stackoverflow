@@ -22,13 +22,20 @@ const AllList = ({
         </div>
         <div className="List-vertical-right">
           <div>
-            <Link to={`/detail/${id}`}>{title}</Link>
+            <Link to={`/detail/${id}`}>
+              <h3 className="blue">{title}</h3>
+            </Link>
           </div>
-          <div>{question}</div>
-          <div className="Button-left ">
-            <button> {tag} </button>
-            <button> {tag} </button>
-            <button> {tag} </button>
+          <div className="Bottom-space">{question}</div>
+          <div className="List-container">
+            <div className="Button-left Bottom-space">
+              <button> {tag} </button>
+              <button> {tag} </button>
+              <button> {tag} </button>
+            </div>
+            <div className="Button-right Bottom-space smallfont">
+              {author} asked {created}
+            </div>
           </div>
         </div>
       </div>
