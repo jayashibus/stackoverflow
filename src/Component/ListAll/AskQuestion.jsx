@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
 const AskQuestion = () => {
+  const [title, setTitle] = useState();
+  const [question, setQuestion] = useState();
+
+  const submitHandler = () => {
+    alert("shibu");
+    if (title.length > 255) {
+      return false;
+    }
+  };
+
   return (
     <div>
       <div className="Askquestion-container">
@@ -13,6 +23,7 @@ const AskQuestion = () => {
           <input
             type="text"
             placeholder="e.g Is there an function for finding the index of the element a vector"
+            onChange={(e) => setTitle(e.target.value)}
           ></input>
         </div>
 
@@ -25,11 +36,17 @@ const AskQuestion = () => {
             Minimum
           </label>
           20 characters.
-          <textarea id="question" name="question" rows="5" cols="33"></textarea>
+          <textarea
+            id="question"
+            name="question"
+            rows="5"
+            cols="33"
+            onChange={(e) => setQuestion(e.target.value)}
+          ></textarea>
         </div>
       </div>
       <div className="Margin-top">
-        <button>Submit</button>
+        <button onClick={submitHandler}>Submit</button>
       </div>
     </div>
   );

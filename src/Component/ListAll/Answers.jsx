@@ -7,11 +7,11 @@ const Answers = ({ post, vote, postedDate, author }) => {
       <div className="List-container">
         <div className="List-vertical-left">
           <div className="Votes">
-            <FaArrowUp />
+            <FaArrowUp size={40} />
           </div>
           <div className="Votes"> {vote}</div>
           <div className="Votes">
-            <FaArrowDown />
+            <FaArrowDown size={40} />
           </div>
         </div>
         <div className="List-vertical-right">

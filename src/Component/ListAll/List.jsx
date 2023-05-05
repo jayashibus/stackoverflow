@@ -22,7 +22,7 @@ const List = ({ data }) => {
           <h1>All Questions</h1>
         </div>
         <div className="Button-right ">
-          <Link to="/askquestion">
+          <Link to={{ pathname: "/askquestion" }}>
             <button> Ask Question </button>
           </Link>
         </div>
