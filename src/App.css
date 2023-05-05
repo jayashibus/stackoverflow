@@ -8,7 +8,6 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  border: solid 1px rgb(233, 11, 11);
   justify-content: space-between;
 }
 .Title-left {
@@ -92,4 +91,18 @@
 }
 .Padding-top {
   padding-top: 15px;
+}
+.Border-gray {
+  border: solid 1px gray;
+}
+
+.Padding {
+  padding: 20px;
+}
+
+.divider-noborder {
+  margin: 10px 0;
+}
+.Margin-top {
+  margin-top: 10px;
 }
