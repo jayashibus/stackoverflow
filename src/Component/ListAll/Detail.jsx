@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import Answers from "./Answers";
 import { FaArrowUp, FaArrowDown } from "react-icons/fa";
 
-const Detail = ({ data }) => {
+const Detail = ({ data, handleVote }) => {
   const { qid } = useParams();
 
   const filteredData = data.filter((item) => item.id == qid);
@@ -26,11 +26,17 @@ const Detail = ({ data }) => {
           <div className="divider"> </div>
           <div className="List-container">
             <div className="List-vertical-left">
-              <div className="Votes">
+              <div
+                className="Votes"
+                onClick={() => handleVote(selectedQuestion.id, "increment")}
+              >
                 <FaArrowUp />
               </div>
               <div className="Votes">{selectedQuestion.vote}</div>
-              <div className="Votes">
+              <div
+                className="Votes"
+                onClick={() => handleVote(selectedQuestion.id, "decrement")}
+              >
                 <FaArrowDown />
               </div>
             </div>
