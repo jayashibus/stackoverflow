@@ -1,6 +1,13 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
-const Detail = () => {
+const Detail = ({ data }) => {
+  console.log(data);
+
+  const { qid } = useParams();
+  console.log(qid);
+  const filteredData = data.filter((item) => item.id === qid);
+
   return (
     <div>
       <div className="List-container">
@@ -12,7 +19,7 @@ const Detail = () => {
         <div className="Title-left">Asked Today</div>
         <div className="Title-right "> Viewed 5 times</div>
       </div>
-      <div class="divider"> </div>
+      <div className="divider"> </div>
       <div className="List-container">
         <div className="List-vertical-left">
           <div className="Votes">0 Votes</div>
@@ -36,7 +43,7 @@ const Detail = () => {
           </div>
         </div>
       </div>
-      <div class="divider"> </div>
+      <div className="divider"> </div>
       <div className="List-container">
         <div className="Title-left">2 Answers </div>
       </div>

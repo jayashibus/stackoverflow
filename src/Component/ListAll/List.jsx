@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import data from "../../Data/data";
 
-const List = () => {
+const List = ({ data }) => {
   const Listing = data.map((item) => {
     const {
       id,
@@ -17,7 +16,7 @@ const List = () => {
       answer,
     } = item;
     return (
-      <div>
+      <div key={id}>
         <div className="List-container">
           <div className="List-vertical-left">
             <div className="Votes">{vote} Votes</div>
@@ -26,7 +25,7 @@ const List = () => {
           </div>
           <div className="List-vertical-right">
             <div>
-              <Link to="/detail">{title}</Link>
+              <Link to={`/detail/${id}`}>{title}</Link>
             </div>
             <div>{question}</div>
             <div className="Button-left ">
@@ -36,7 +35,7 @@ const List = () => {
             </div>
           </div>
         </div>
-        <div class="divider"> </div>
+        <div className="divider"> </div>
       </div>
     );
   });
@@ -60,11 +59,11 @@ const List = () => {
           <button> More </button>
         </div>
       </div>
-      <div class="divider"> </div>
+      <div className="divider"> </div>
       {Listing}
 
       <div className="List-container">
-        <div class="pagination">
+        <div className="pagination">
           <a href="#">&laquo;</a>
           <a href="#">1</a>
           <a href="#">2</a>
@@ -75,8 +74,8 @@ const List = () => {
           <a href="#">&raquo;</a>
         </div>
 
-        <div class="Button-right ">
-          <div class="pagination">
+        <div className="Button-right ">
+          <div className="pagination">
             <a href="#">15</a>
             <a href="#">30</a>
             <a href="#">50</a>
