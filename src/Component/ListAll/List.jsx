@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const List = () => {
   return (
@@ -6,7 +7,9 @@ const List = () => {
       <div className="List-container">
         <div className="Title-left">All Questions</div>
         <div className="Button-right ">
-          <button> Ask Question </button>
+          <Link to="/askquestion">
+            <button> Ask Question </button>
+          </Link>
         </div>
       </div>
       <div className="List-container">
@@ -28,8 +31,10 @@ const List = () => {
         </div>
         <div className="List-vertical-right">
           <div>
-            Woocommerce add custom dropdown-field to checkout and show in
-            backend (order)
+            <Link to="/detail">
+              Woocommerce add custom dropdown-field to checkout and show in
+              backend (order)
+            </Link>
           </div>
           <div>
             I use the following code to add a custom field to the WooCommerce
