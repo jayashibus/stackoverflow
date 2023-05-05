@@ -5,13 +5,8 @@ import AskQuestion from "./Component/ListAll/AskQuestion";
 import Detail from "./Component/ListAll/Detail";
 import List from "./Component/ListAll/List";
 import data from "./Data/data";
-import { useDispatch } from "react-redux";
-import { setMovies } from "./Redux/actions/movieAction";
 
 function App() {
-  const dispatch = useDispatch();
-  dispatch(setMovies(data));
-
   return (
     <div className="App">
       <BrowserRouter>
