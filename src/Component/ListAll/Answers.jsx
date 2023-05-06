@@ -10,8 +10,10 @@ import {
 const Answers = ({ parentId, answerPost }) => {
   const { id, post, vote, postedDate, author } = answerPost;
 
+  //Trigger Redux to update the changes
   const dispatch = useDispatch();
 
+  //User voting for the all the Answers for the post
   const handleAnswerIncrement = (postId, answerId) => {
     dispatch(setVoteIncrement(postId, answerId));
   };

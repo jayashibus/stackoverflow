@@ -1,25 +1,25 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import AllList from "./AllList";
 import Pagination from "./Pagination";
 import { useSelector } from "react-redux";
 
 const List = () => {
+  //Pagination state values
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(15);
 
+  //Extract Data from Redux
   let data = useSelector((state) => {
     return { ...state.allData };
   });
 
-  useEffect(() => {
-    // Do something when the answers data changes
-  });
-
+  //Pagination
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
 
+  //Pagination variables
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = data.datas.slice(indexOfFirstItem, indexOfLastItem);

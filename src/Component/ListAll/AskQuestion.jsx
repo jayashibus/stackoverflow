@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import existingRecord from "../../Data/data";
 
 const AskQuestion = () => {
+  //Local state for form
   const [title, setTitle] = useState("");
   const [question, setQuestion] = useState("");
   const [message, setMessage] = useState("");
 
-  let previousId = existingRecord.length;
-
+  //Validation for the topic
   function handleInputChange(event) {
     const value = event.target.value;
     if (value.length <= 255) {
@@ -16,6 +16,8 @@ const AskQuestion = () => {
   }
 
   const remainingChars = 255 - title.length;
+
+  //Form submission
   const submitHandler = (e) => {
     e.preventDefault();
 

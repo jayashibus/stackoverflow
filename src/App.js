@@ -1,19 +1,17 @@
 import "./App.css";
 import { useDispatch } from "react-redux";
 import { setDatas } from "./redux/actions/dataAction";
-
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AskQuestion from "./Component/ListAll/AskQuestion";
 
 import Detail from "./Component/ListAll/Detail";
 import List from "./Component/ListAll/List";
 import initialData from "./Data/data";
-import { useSelector } from "react-redux";
 
 function App() {
+  // Dispatching the Initial Data to Redux Store
   const dispatch = useDispatch();
-
   dispatch(setDatas(initialData));
 
   return (

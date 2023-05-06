@@ -5,18 +5,21 @@ import { FaArrowUp, FaArrowDown } from "react-icons/fa";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { nanoid } from "nanoid";
-
 import { setIncrement, setDecrement } from "../../redux/actions/dataAction";
 
 const Detail = () => {
+  //Getting the post id from url
   let { qid } = useParams();
   qid = parseInt(qid);
+
+  //Trigger Redux to update
   const dispatch = useDispatch();
 
   const data = useSelector((state) =>
     state.allData.datas?.find((post) => post.id === qid)
   );
 
+  //User voting for topic
   const handleIncrement = (postId) => {
     dispatch(setIncrement(postId));
   };
@@ -25,6 +28,7 @@ const Detail = () => {
     dispatch(setDecrement(postId));
   };
 
+  //No data
   if (!data) {
     return <div>Loading Details...</div>;
   }
