@@ -1,6 +1,6 @@
 import "./App.css";
 import { useDispatch } from "react-redux";
-import { setDatas } from "./redux/actions/dataAction";
+import { setDatas } from "./Redux/actions/dataAction";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AskQuestion from "./Component/ListAll/AskQuestion";

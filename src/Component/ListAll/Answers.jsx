@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 import {
   setVoteIncrement,
   setVoteDecrement,
-} from "../../redux/actions/dataAction";
+} from "../../Redux/actions/dataAction";
 
 const Answers = ({ parentId, answerPost }) => {
   const { id, post, vote, postedDate, author } = answerPost;

@@ -5,7 +5,7 @@ import { FaArrowUp, FaArrowDown } from "react-icons/fa";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { nanoid } from "nanoid";
-import { setIncrement, setDecrement } from "../../redux/actions/dataAction";
+import { setIncrement, setDecrement } from "../../Redux/actions/dataAction";
 
 const Detail = () => {
   //Getting the post id from url
