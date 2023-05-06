@@ -5,7 +5,6 @@ const AskQuestion = () => {
   const [question, setQuestion] = useState();
 
   const submitHandler = () => {
-    alert("shibu");
     if (title.length > 255) {
       return false;
     }
@@ -24,6 +23,7 @@ const AskQuestion = () => {
             type="text"
             placeholder="e.g Is there an function for finding the index of the element a vector"
             onChange={(e) => setTitle(e.target.value)}
+            value={title}
           ></input>
         </div>
 
@@ -42,6 +42,7 @@ const AskQuestion = () => {
             rows="5"
             cols="33"
             onChange={(e) => setQuestion(e.target.value)}
+            value={question}
           ></textarea>
         </div>
       </div>

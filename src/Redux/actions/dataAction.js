@@ -18,3 +18,16 @@ export const setDecrement = (postId) => {
     payload: postId,
   };
 };
+
+export const setVoteIncrement = (postId, answerId) => {
+  return {
+    type: ActionTypes.INCREMENT_CHILD_VOTE,
+    payload: { postId, answerId },
+  };
+};
+export const setVoteDecrement = (postId, answerId) => {
+  return {
+    type: ActionTypes.DECREMENT_CHILD_VOTE,
+    payload: { postId, answerId },
+  };
+};

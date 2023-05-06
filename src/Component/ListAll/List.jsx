@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import AllList from "./AllList";
 import Pagination from "./Pagination";
@@ -59,10 +59,10 @@ const List = () => {
 
         <div className="Button-right ">
           <div className="pagination">
-            <a href="#">15</a>
-            <a href="#">30</a>
-            <a href="#">50</a>
-            <a href="#">per page</a>
+            <a href="/#">15</a>
+            <a href="/#">30</a>
+            <a href="/#">50</a>
+            <a href="/#">per page</a>
           </div>
         </div>
       </div>

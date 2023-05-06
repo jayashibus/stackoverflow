@@ -1,17 +1,40 @@
 import React from "react";
 import { FaArrowUp, FaArrowDown } from "react-icons/fa";
 import { nanoid } from "nanoid";
+import { useDispatch } from "react-redux";
+import {
+  setVoteIncrement,
+  setVoteDecrement,
+} from "../../redux/actions/dataAction";
 
-const Answers = ({ post, vote, postedDate, author }) => {
+const Answers = ({ parentId, answerPost }) => {
+  const { id, post, vote, postedDate, author } = answerPost;
+
+  const dispatch = useDispatch();
+
+  const handleAnswerIncrement = (postId) => {
+    dispatch(setVoteIncrement(postId));
+  };
+
+  const handleAnswerDecrement = (postId) => {
+    dispatch(setVoteDecrement(postId));
+  };
+
   return (
     <div key={nanoid(6)}>
       <div className="List-container">
         <div className="List-vertical-left">
-          <div className="Votes">
+          <div
+            className="Votes"
+            onClick={() => handleAnswerIncrement(parentId, id)}
+          >
             <FaArrowUp size={40} />
           </div>
-          <div className="Votes"> {vote}</div>
-          <div className="Votes">
+          <div className="Votes">{vote}</div>
+          <div
+            className="Votes"
+            onClick={() => handleAnswerDecrement(parentId, id)}
+          >
             <FaArrowDown size={40} />
           </div>
         </div>

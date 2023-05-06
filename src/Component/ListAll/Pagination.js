@@ -17,7 +17,7 @@ const Pagination = ({
           <a
             key={number}
             onClick={() => onPageChange(number)}
-            href="#"
+            href="/#"
             className={`page-link ${currentPage === number ? "active" : ""}`}
           >
             {number}
