@@ -1,9 +1,10 @@
 import React from "react";
 import { FaArrowUp, FaArrowDown } from "react-icons/fa";
+import { nanoid } from "nanoid";
 
 const Answers = ({ post, vote, postedDate, author }) => {
   return (
-    <div>
+    <div key={nanoid(6)}>
       <div className="List-container">
         <div className="List-vertical-left">
           <div className="Votes">

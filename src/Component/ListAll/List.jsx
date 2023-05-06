@@ -2,10 +2,15 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AllList from "./AllList";
 import Pagination from "./Pagination";
+import { useSelector } from "react-redux";
 
-const List = ({ data }) => {
+const List = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(15);
+
+  let data = useSelector((state) => {
+    return { ...state.allData };
+  });
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
@@ -13,7 +18,7 @@ const List = ({ data }) => {
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
+  const currentItems = data.datas.slice(indexOfFirstItem, indexOfLastItem);
 
   return (
     <>
@@ -29,7 +34,7 @@ const List = ({ data }) => {
       </div>
       <div className="List-container">
         <div className="Title-left">
-          <h3>23691,456 Question</h3>
+          <h3>{data.datas.length} Question</h3>
         </div>
         <div className="Button-right ">
           <button> Newest </button>
@@ -47,7 +52,7 @@ const List = ({ data }) => {
       <div className="List-container">
         <Pagination
           itemsPerPage={itemsPerPage}
-          totalItems={data.length}
+          totalItems={data.datas.length}
           currentPage={currentPage}
           onPageChange={handlePageChange}
         />
