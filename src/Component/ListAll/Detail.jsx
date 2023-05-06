@@ -29,7 +29,7 @@ const Detail = () => {
   };
 
   if (!data) {
-    return <div>Loading...</div>;
+    return <div>Loading Details...</div>;
   }
   // const post = useSelector((state) => state.posts.find((post) => post.id === id));
 

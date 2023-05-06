@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import AllList from "./AllList";
 import Pagination from "./Pagination";
@@ -10,6 +10,10 @@ const List = () => {
 
   let data = useSelector((state) => {
     return { ...state.allData };
+  });
+
+  useEffect(() => {
+    // Do something when the answers data changes
   });
 
   const handlePageChange = (pageNumber) => {

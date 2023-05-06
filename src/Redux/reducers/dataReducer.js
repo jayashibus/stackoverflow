@@ -10,68 +10,126 @@ export const dataReducer = (state = initialState, { type, payload }) => {
       return { ...state, datas: [...payload] };
 
     case ActionTypes.INCREMENT_VOTE:
-      return state.datas.map((post) => {
-        if (post.id === payload) {
-          return {
-            ...post,
-            vote: post.vote + 1,
-          };
-        } else {
-          return post;
-        }
-      });
+      return {
+        ...state,
+        datas: [
+          ...state.datas.map((post) => {
+            if (post.id === payload) {
+              return {
+                ...post,
+                vote: post.vote + 1,
+              };
+            } else {
+              return post;
+            }
+          }),
+        ],
+      };
 
     case ActionTypes.DECREMENT_VOTE:
-      return state.datas.map((post) => {
-        if (post.id === payload) {
-          return {
-            ...post,
-            vote: post.vote - 1,
-          };
-        } else {
-          return post;
-        }
-      });
+      return {
+        ...state,
+        datas: [
+          ...state.datas.map((post) => {
+            if (post.id === payload) {
+              return {
+                ...post,
+                vote: post.vote - 1,
+              };
+            } else {
+              return post;
+            }
+          }),
+        ],
+      };
 
     case ActionTypes.INCREMENT_CHILD_VOTE:
-      return state.datas.map((post) => {
-        if (post.id === payload.postId) {
-          const updatedAnswers = post.answer.map((answer) => {
-            if (answer.id === payload.answerId) {
+      return {
+        ...state,
+        datas: [
+          ...state.datas.map((post) => {
+            if (post.id === payload.postId) {
+              const updatedAnswers = post.answer.map((answer) => {
+                if (answer.id === payload.answerId) {
+                  return {
+                    ...answer,
+                    vote: answer.vote + 1,
+                  };
+                }
+                return answer;
+              });
               return {
-                ...answer,
-                vote: answer.vote + 1,
+                ...post,
+                answer: updatedAnswers,
               };
             }
-            return answer;
-          });
-          return {
-            ...post,
-            answer: updatedAnswers,
-          };
-        }
-        return post;
-      });
+            return post;
+          }),
+        ],
+      };
+
+    // return state.datas.map((post) => {
+    //   if (post.id === payload.postId) {
+    //     const updatedAnswers = post.answer.map((answer) => {
+    //       if (answer.id === payload.answerId) {
+    //         return {
+    //           ...answer,
+    //           vote: answer.vote + 1,
+    //         };
+    //       }
+    //       return answer;
+    //     });
+    //     return {
+    //       ...post,
+    //       answer: updatedAnswers,
+    //     };
+    //   }
+    //   return post;
+    // });
 
     case ActionTypes.DECREMENT_CHILD_VOTE:
-      return state.datas.map((post) => {
-        if (post.id === payload.postId) {
-          const updatedAnswers = post.answer.map((answer) => {
-            if (answer.id === payload.answerId) {
+      return {
+        ...state,
+        datas: [
+          ...state.datas.map((post) => {
+            if (post.id === payload.postId) {
+              const updatedAnswers = post.answer.map((answer) => {
+                if (answer.id === payload.answerId) {
+                  return {
+                    ...answer,
+                    vote: answer.vote - 1,
+                  };
+                }
+                return answer;
+              });
               return {
-                ...answer,
-                vote: answer.vote - 1,
+                ...post,
+                answer: updatedAnswers,
               };
             }
-            return answer;
-          });
-          return {
-            ...post,
-            answer: updatedAnswers,
-          };
-        }
-        return post;
-      });
+            return post;
+          }),
+        ],
+      };
+
+    // return state.datas.map((post) => {
+    //   if (post.id === payload.postId) {
+    //     const updatedAnswers = post.answer.map((answer) => {
+    //       if (answer.id === payload.answerId) {
+    //         return {
+    //           ...answer,
+    //           vote: answer.vote - 1,
+    //         };
+    //       }
+    //       return answer;
+    //     });
+    //     return {
+    //       ...post,
+    //       answer: updatedAnswers,
+    //     };
+    //   }
+    //   return post;
+    // });
     default:
       return state;
   }

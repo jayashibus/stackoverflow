@@ -12,12 +12,12 @@ const Answers = ({ parentId, answerPost }) => {
 
   const dispatch = useDispatch();
 
-  const handleAnswerIncrement = (postId) => {
-    dispatch(setVoteIncrement(postId));
+  const handleAnswerIncrement = (postId, answerId) => {
+    dispatch(setVoteIncrement(postId, answerId));
   };
 
-  const handleAnswerDecrement = (postId) => {
-    dispatch(setVoteDecrement(postId));
+  const handleAnswerDecrement = (postId, answerId) => {
+    dispatch(setVoteDecrement(postId, answerId));
   };
 
   return (
