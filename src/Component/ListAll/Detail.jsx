@@ -12,9 +12,6 @@ const Detail = () => {
   let { qid } = useParams();
   qid = parseInt(qid);
   const dispatch = useDispatch();
-  // let data = useSelector((state) => {
-  //   return { ...state.allData };
-  // });
 
   const data = useSelector((state) =>
     state.allData.datas?.find((post) => post.id === qid)
@@ -31,9 +28,6 @@ const Detail = () => {
   if (!data) {
     return <div>Loading Details...</div>;
   }
-  // const post = useSelector((state) => state.posts.find((post) => post.id === id));
-
-  // const filteredData = data.datas.find((item) => item.id === qid);
 
   return (
     <div key={nanoid(6)}>

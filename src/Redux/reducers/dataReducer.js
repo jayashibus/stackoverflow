@@ -68,25 +68,6 @@ export const dataReducer = (state = initialState, { type, payload }) => {
         ],
       };
 
-    // return state.datas.map((post) => {
-    //   if (post.id === payload.postId) {
-    //     const updatedAnswers = post.answer.map((answer) => {
-    //       if (answer.id === payload.answerId) {
-    //         return {
-    //           ...answer,
-    //           vote: answer.vote + 1,
-    //         };
-    //       }
-    //       return answer;
-    //     });
-    //     return {
-    //       ...post,
-    //       answer: updatedAnswers,
-    //     };
-    //   }
-    //   return post;
-    // });
-
     case ActionTypes.DECREMENT_CHILD_VOTE:
       return {
         ...state,
@@ -112,24 +93,6 @@ export const dataReducer = (state = initialState, { type, payload }) => {
         ],
       };
 
-    // return state.datas.map((post) => {
-    //   if (post.id === payload.postId) {
-    //     const updatedAnswers = post.answer.map((answer) => {
-    //       if (answer.id === payload.answerId) {
-    //         return {
-    //           ...answer,
-    //           vote: answer.vote - 1,
-    //         };
-    //       }
-    //       return answer;
-    //     });
-    //     return {
-    //       ...post,
-    //       answer: updatedAnswers,
-    //     };
-    //   }
-    //   return post;
-    // });
     default:
       return state;
   }
