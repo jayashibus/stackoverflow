@@ -1,12 +1,12 @@
-Following feactures I completed in this app. I used ReactJs, Redux to implement the below feactures.
+Following features I completed in this app. I used ReactJs, Redux to implement the below features.
 
 Link : https://96ntvy-3000.csb.app/
 
-- Maintained a list of question along with number of accumulated votes.
-- Pagination. Currently set 15 topic per page.
-- Allowed the user submit a question. This question will store in the array.
-- Set the topic title limit the maximum 255 charater
-- Implemented the user allow to vote answers and posting mutiple time. Both increment and decrement
+- Maintained a list of questions along with the number of accumulated votes.
+- Pagination. Currently 15 topics per page.
+- Allow the user to submit a question. This question will be stored in the array.
+- Set the topic title limit the maximum 255 character
+- Implemented the user allow to vote answers and post multiple times. Both increment and decrement
 
 ### Technologies Used
 
