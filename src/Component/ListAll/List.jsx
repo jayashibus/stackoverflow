@@ -62,12 +62,7 @@ const List = () => {
         />
 
         <div className="Button-right ">
-          <div className="pagination">
-            <a href="/#">15</a>
-            <a href="/#">30</a>
-            <a href="/#">50</a>
-            <a href="/#">per page</a>
-          </div>
+          <div className="pagination"></div>
         </div>
       </div>
     </>
